@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cph5b8tf7gopg"]
+
+[ext_resource type="Script" uid="uid://cwbi503vgrblc" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://w1bg8ljqa2lt" path="res://world.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node" unique_id=431849599]
+script = ExtResource("1_0xm2m")
+world = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=1620485219]
+z_index = 100
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 200.0
+offset_bottom = 200.0

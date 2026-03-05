@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://4mba14btieg2"]
+
+[ext_resource type="Script" uid="uid://djysyvcqc018f" path="res://finaltree.gd" id="1_ahdco"]
+[ext_resource type="PackedScene" uid="uid://b1xdoemxvjtmq" path="res://tree_white.glb" id="1_juper"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_juper"]
+height = 3.0
+radius = 0.8
+
+[node name="FinalTree" type="StaticBody3D" unique_id=1791429978]
+script = ExtResource("1_ahdco")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=727612529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("CylinderShape3D_juper")
+
+[node name="TreeModel" parent="." unique_id=1112455722 instance=ExtResource("1_juper")]
